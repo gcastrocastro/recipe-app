@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2> Find Your New Favorite Dish</h2>
+    <div class="mobile-container">
+        <header>
+            <input type="text" id="search-term"> 
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </header>
+        <div class="fave-container">
+            <h3>Favorite Meals</h3>
+            <ul class="fave-meals" id="fave-meals">
+                <!-- <li><img src="https://www.themealdb.com//images//media//meals//tnwy8m1628770384.jpg" alt=""><span>Black Bean Chili</span></li>
+                <li><img src="https://www.themealdb.com//images//media//meals//spswqs1511558697.jpg" alt=""><span>Shrimp Casserole</span></li>
+                <li><img src="https://www.themealdb.com//images//media//meals//qqwypw1504642429.jpg" alt=""><span>Vietnamese Grilled Pork</span></li>
+                <li><img src="https://www.themealdb.com//images//media//meals//tnwy8m1628770384.jpg" alt=""><span>Black Bean Chili</span></li>
+                <li><img src="https://www.themealdb.com//images//media//meals//spswqs1511558697.jpg" alt=""><span>Shrimp Casserole</span></li>
+                <li><img src="https://www.themealdb.com//images//media//meals//qqwypw1504642429.jpg" alt=""><span>Vietnamese Grilled Pork</span></li> -->
+            </ul>
+        </div>
+        <div class="meals" id="meals">
+            <!-- <div class="meal">
+                <div class="meal-header">
+                    <span class="random">
+                        Random Recipe
+                    </span>
+                    <img src="https://www.themealdb.com//images//media//meals//qvrwpt1511181864.jpg" alt="">
+                </div>
+                <div class="meal-body">
+                    <h4> Recipe Title</h4>
+                    <button class="fave-btn">
+                        <i class="far fa-heart"></i>                      
+                    </button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div id="meal-popup" class="popup-container hidden">
+        <div class="popup">
+                <button id="close-popup" class="close-popup"><i class="fa-solid fa-circle-xmark"></i></button>
+                <div id="meal-info" class="meal-info">
+                </div> 
+        </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #FF9A8B; */
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.mobile-container{
+    /* this is to make it look like a mobile device */
+    width:800px;
+    height: auto;
+    background-color: #FFF;
+    box-shadow: 10px 10px #33333394;
+    border-radius: 5px;
+    overflow:scroll;
+    margin: 0 0 50px 0;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header input {
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    margin: 10px;
+    font-family: inherit;
+}
+
+header button{
+    background-color: transparent;
+    color: #aaa;
+    font-size: 1rem;
+    border:none;
+    cursor: pointer;
+}
+
+.fave-container{
+    padding: 0.5rem 1rem;
+    text-align:center;
+    background-color: #FFEFC880;
+}
+
+.fave-meals{
+    display:flex;
+    flex-wrap: nowrap;
+    /* white-space: normal; */
+    overflow-x: auto;
+    justify-content: center;
+    list-style: none;
+    padding:0;
+}
+
+.fave-meals li {
+    width: 110px;
+    padding: 10px;
+    flex: 0 0 auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.fave-meals li .clear{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fave-meals li .clear:hover{
+    opacity: 1;
+}
+
+.fave-meals li img{
+    border: 3px solid #fff;
+    border-radius: 50%;
+    object-fit:cover;
+    height:70px;
+    width:70px;
+}
+
+.fave-meals li span{
+    font-size: 1rem;
+}
+
+/* Meals Section*/
+.meal{
+    margin: 1.5rem;
+    box-shadow: 0 0 10px 2px #3333331A;
+    border-radius: 10px;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.meal-header{
+   position:relative;
+}
+
+.meal-header .random{
+   position: absolute;
+   top: 1rem;
+   background-color: #fff;
+   padding: 0.25rem 1rem;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+}
+
+.meal-header img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+}
+
+.meal-body{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.meal-body h4{
+    margin:0;
+}
+
+.meal-body .fave-btn{
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor:pointer;
+}
+
+/* Meal Recipe Info */
+
+.popup-container{
+    position:fixed;
+    background-color: rgba(0,0,0,0.5);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+.popup-container.hidden{
+    opacity: 0;
+    /* user-select:none is to make sure the text can't be highlighted */
+    /* but since the div is still there, it doesn't allow you to interact */
+    /* with what's in the background */
+    pointer-events: none;
+}
+
+.popup{
+    background-color: white;
+    max-width:500px;
+    max-height:100vh;
+    width:100%;
+    padding: 0 2rem;
+    border: 15px dotted #FF6A88;
+    border-radius: 5px;
+    position:relative;
+    overflow:auto;
+}
+
+.popup h1{
+    text-align: center;
+}
+
+.popup img{
+    max-width: 200px;
+    max-height: 200px;
+    display:block;
+    margin: 0 auto;
+}
+
+.popup .close-popup{
+    background: transparent;
+    border:none;
+    position:absolute;
+    top:.5rem;
+    right:.5rem;
+    font-size: 2rem;
+    cursor:pointer;
+}
+
+/* this is to say what color the btn should change into when clicked */
+.meal-body .fave-btn.active{
+    color: #FF6A88;
+}
+
+/* Headers */
+
+h2{
+    text-align: center;
+    margin-bottom:0;
+}
+
+h3{
+    margin:0;
+}
