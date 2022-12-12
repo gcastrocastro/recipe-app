@@ -22,7 +22,7 @@ img {
 
 .mobile-container{
     /* this is to make it look like a mobile device */
-    width:800px;
+    width:400px;
     height: auto;
     background-color: #FFF;
     box-shadow: 10px 10px #33333394;
@@ -220,4 +220,12 @@ h2{
 
 h3{
     margin:0;
+}
+
+@media (min-width: 750px) and (max-width: 2000px){
+    .mobile-container{
+        /* this is to make it look like a mobile device */
+        width:700px;
+        height: auto;
+    }
 }
