@@ -7,7 +7,6 @@
 body {
     margin:0;
     font-family: 'Poppins', sans-serif;
-    /* background-color: #FF9A8B; */
     background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
     display:flex;
     align-items: center;
@@ -21,7 +20,6 @@ img {
 }
 
 .mobile-container{
-    /* this is to make it look like a mobile device */
     width:400px;
     height: auto;
     background-color: #FFF;
@@ -64,7 +62,6 @@ header button{
 .fave-meals{
     display:flex;
     flex-wrap: nowrap;
-    /* white-space: normal; */
     overflow-x: auto;
     justify-content: center;
     list-style: none;
@@ -152,7 +149,6 @@ header button{
 }
 
 /* Meal Recipe Info */
-
 .popup-container{
     position:fixed;
     background-color: rgba(0,0,0,0.5);
@@ -167,9 +163,6 @@ header button{
 
 .popup-container.hidden{
     opacity: 0;
-    /* user-select:none is to make sure the text can't be highlighted */
-    /* but since the div is still there, it doesn't allow you to interact */
-    /* with what's in the background */
     pointer-events: none;
 }
 
@@ -206,13 +199,11 @@ header button{
     cursor:pointer;
 }
 
-/* this is to say what color the btn should change into when clicked */
 .meal-body .fave-btn.active{
     color: #FF6A88;
 }
 
 /* Headers */
-
 h2{
     text-align: center;
     margin-bottom:0;
@@ -224,7 +215,6 @@ h3{
 
 @media (min-width: 750px) and (max-width: 2000px){
     .mobile-container{
-        /* this is to make it look like a mobile device */
         width:700px;
         height: auto;
     }
